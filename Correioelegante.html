@@ -2,11 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Correio Elegante Impacta 2024</title>
+    <title>Correio Elegante Impacta T2 2024</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: hsla(215, 94%, 26%, 0.78);
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,36 +17,35 @@
 
         #carta {
             background-color: #fff;
-            border: 2px solid #000;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             width: 300px;
             text-align: center;
             position: relative;
         }
 
         #fitinha {
-            width: 100%;
+            width: 120%;
             height: 15px;
             background-color: #ff0000;
             position: absolute;
             top: 15px;
-            left: 0;
-			
+            left: -10%; 
         }
 
         #mensagem {
             font-size: 18px;
             margin-top: 20px;
         }
+
     </style>
 </head>
 <body>
-
     <div id="carta">
         <div id="fitinha"></div>
-        <h2>Correio Elegante Impaccta 2024</h2>
+        <h2>Correio Elegante Impacta T2 2024</h2>
         <p id="mensagem"></p>
     </div>
 
@@ -62,7 +61,7 @@
             document.getElementById("mensagem").textContent = mensagemAleatoria;
         }
 
-        // função randomico
+        // função randomico 5 segundos
         setInterval(exibirMensagemAleatoria, 5000);
 
         // aqui exibe
@@ -70,4 +69,5 @@
     </script>
 
 </body>
+//*ffff*//
 </html>
