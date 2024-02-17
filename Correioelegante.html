@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Correio Elegante Impacta T2 2024</title>
+    <title>Correio Elegante Impacta 2024 MBA ES 26</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,7 +26,7 @@
             position: relative;
         }
 
-        #fitinha {
+        #fitinhaVermelha {
             width: 120%;
             height: 15px;
             background-color: #ff0000;
@@ -37,37 +37,43 @@
 
         #mensagem {
             font-size: 18px;
-            margin-top: 20px;
+            margin-top: -3px;
         }
 
     </style>
 </head>
 <body>
     <div id="carta">
-        <div id="fitinha"></div>
-        <h2>Correio Elegante Impacta T2 2024</h2>
-        <p id="mensagem"></p>
+        <div id="fitinhaVermelha">
+            <p id="mensagem"></p></div>
+            <br>
+            <h2>  Correio Elegante  </h2>  
+            <br>
+            <br>
     </div>
 
     <script>
-        // JS neste trecho
-        const mensagens = ["Feliz 2024!", "Paz", "Prosperidade", "Saúde"];
+        // INÍCIO - JS neste trecho
 
+        //Aqui -- guardo as "strings"
+        const mensagens = ["Feliz 2024!", "Paz", "Prosperidade", "Saúde"];
+         
+        //Aqui --Função(function), regra criada para atender a solicitação
         function exibirMensagemAleatoria() {
-            // troca a mensagem com o math.random
+            // Aqui --troca a mensagem com o math.random
             const mensagemAleatoria = mensagens[Math.floor(Math.random() * mensagens.length)];
 
-            // Atualiza
+            // Aqui --JS procura elemento no HTML, neste caso o mensagem <p id="mensagem"></p>
             document.getElementById("mensagem").textContent = mensagemAleatoria;
         }
-
-        // função randomico 5 segundos
+        // Aqui -- informo o intervalo em milesegundos 500 convertendo em 5 segundos
         setInterval(exibirMensagemAleatoria, 5000);
 
-        // aqui exibe
+        // Aqui -- exibe
         exibirMensagemAleatoria();
+
+        // FIM -- JS neste trecho
     </script>
 
 </body>
-//*ffff*//
 </html>
